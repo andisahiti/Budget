@@ -1,0 +1,52 @@
+.income {
+  float: left;
+  width: 475px;
+}
+
+.income__title {
+  color: #28b9b5;
+}
+
+.item__value,
+.item__delete__btn {
+  color: #28b9b5;
+}
+
+.expenses__title {
+  color: #ff5049;
+}
+.expenses {
+  float: left;
+  width: 475px;
+}
+
+@media (min-width: 800px) {
+  .income {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .expenses {
+    width: 85vw;
+  }
+  .income {
+    width: 85vw;
+  }
+}
+@media (min-width: 900px) {
+  .expenses {
+    width: 550px;
+  }
+  .expenses__title {
+    font-size: 22px;
+  }
+  .income__title {
+    font-size: 22px;
+  }
+  .income {
+    width: 550px;
+  }
+  .item__value {
+    font-size: 20px;
+  }
+}

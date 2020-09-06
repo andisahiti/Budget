@@ -1,0 +1,150 @@
+.top {
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url('../../assets/back.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.budget {
+  position: absolute;
+  width: 520px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.budget__title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.budget__value {
+  font-weight: 300;
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.budget__income,
+.budget__expenses {
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+.budget__income {
+  margin-bottom: 10px;
+  background-color: #28b9b5;
+}
+
+.budget__expenses {
+  background-color: #ff5049;
+}
+
+.budget__income__text,
+.budget__expenses__text {
+  float: left;
+  font-size: 13px;
+  color: #444;
+  margin-top: 2px;
+}
+
+.budget__income__value,
+.budget__expenses__value {
+  letter-spacing: 1px;
+  float: left;
+}
+
+.budget__income__percentage,
+.budget__expenses__percentage {
+  float: left;
+  width: 34px;
+  font-size: 11px;
+  padding: 3px 0;
+  margin-left: 10px;
+}
+
+.budget__expenses__percentage {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  border-radius: 3px;
+}
+
+.right {
+  float: right;
+}
+.red {
+  color: #ff5049 !important;
+}
+.red-focus:focus {
+  border: 1px solid #ff5049 !important;
+}
+
+@media (max-height: 520px) {
+  .budget {
+    top: 0%;
+  }
+}
+
+@media (max-width: 1800px) {
+  .budget__title {
+    font-size: 23px;
+  }
+  .budget__value {
+    font-size: 48px;
+  }
+  .budget__income__text,
+  .budget__expenses__text {
+    font-size: 18px;
+  }
+  .budget__income__value,
+  .budget__expenses__value {
+    font-size: 18px;
+  }
+  .budget__expenses__percentage {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .budget {
+    width: 480px;
+  }
+  .budget__title {
+    font-size: 25px;
+  }
+  .budget__value {
+    font-size: 40px;
+  }
+  .budget__income__text,
+  .budget__expenses__text {
+    font-size: 14px;
+  }
+  .budget__income__value,
+  .budget__expenses__value {
+    font-size: 15px;
+  }
+  .budget__expenses__percentage {
+    font-size: 15px;
+  }
+}
+@media (max-width: 520px) {
+  .budget {
+    width: 80vw;
+  }
+  .budget__title {
+    font-size: 20px;
+  }
+  .budget__value {
+    font-size: 30px;
+  }
+}

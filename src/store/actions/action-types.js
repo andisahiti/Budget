@@ -1,0 +1,12 @@
+export const ADD_INC = 'ADD_INC'
+export const ADD_EXP = 'ADD_EXP'
+export const REMOVE_EXP = 'REMOVE_EXP'
+export const REMOVE_INC = 'REMOVE_INC'
+export const VALUE = 'VALUE'
+export const DESCRIPTION = 'DESCRIPTION'
+export const TYPE = 'TYPE'
+export const LOCAL = 'LOCAL'
+export const LOCAL_START = 'LOCAL_START'
+
+export const CLEAR = 'CLEAR'
+export const CLEAR_ALL = 'CLEAR_ALL'
